@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/user/Desktop/survey-form.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    body{background-color:#a9d7d1;}
+    
+    #title{ color: black;
+    text-decoration: underline;
+    text-align: center;}
+.container{display:flex;
+margin: 70px 70px 70px 70px;
+justify-content: center;
+background-color: white;
+padding: 20px 10px 20px 10px;}
+    #description{
+      
+      font-style: italic;
+    }
+    
+    #survey-form
+    {
+      text-align:justify;
+    }
+    [type="text"]{;
+    border-color: black;
+width: 200px;}
+    [type="email"]{
+    border-color: black;
+width: 200px;}
+    [type="number"]{
+    border-color: black;
+width: 200px;}
+    [type="submit"] {border-color:black;
+      background-color:hsl(240,90%,80%);}
+#text-area{ width:200px;
+height:60px;}
+  </style>
+ </head><body><h1 id="title">SURVEY FORM</h1>
+
+  <div class="container">
+
+  <form id="survey-form">
+<p id="description"> Let us know how we can improve codecamp. </p>
+    <label for="name-label">NAME: <input id="name" type="text" required="" placeholder="Enter your name"> </label>
+    <br>
+    <br> <label for="email-label">EMAIL: <input id="name" type="email" required="" placeholder="Enter your email"> </label>
+    <br>
+    <br>
+    <label for="number-label">AGE: <input id="age" type="number" required="" placeholder="Enter age" min="1" max="100"> </label>
+    <br>
+    <br>
+    <label for="dropdown-label">What option describes your role best?: <input id="dropdown" type="text" required="" list="l1" placeholder="Enter your role here"> 
+    <datalist id="l1">
+              <option> Student</option>
+      <option> Mentor</option>
+      <option> Full time learner</option>
+      <option>Prefer not to say</option>
+      </datalist> </label>
+    <br>
+    <br>
+    <label for="radio"> How likely is that you would recommend freeCodeCamp to a friend?: 
+<ul>
+<li> <input id="radio" type="radio" name="name"> Definitely </li>
+<li> <input id="radio" type="radio" name="name"> Maybe </li>
+<li>  <input id="radio" type="radio" name="name"> Not sure</li> </ul></label>
+    <br> <br>
+    <label for="checkbox"> Things that should be improved in the future
+(Check all that apply): 
+<ul>
+<li><input id="checkbox" type="checkbox" name="value">Front end projects</li>
+ <li>   <input id="checkbox" type="checkbox" name="value">Back end projects</li>
+ <li>   <input id="checkbox" type="checkbox" name="name">Data visualization</li>
+  <li>   <input id="checkbox" type="checkbox" name="name">Challenges</li>
+    </label>
+    <br> <br>
+    <label for="text-area"> Any additional comments or suggestions: <input id="text-area" type="text" placeholder="Optional"> </label>
+    <br> <br> <button style="margin-left:auto;
+margin-right:auto;display:block" type="submit"> Submit </button>
+  </form>
+  </div>
+</body></html>
