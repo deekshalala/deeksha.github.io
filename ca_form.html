@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {background-image: url('http://bringsmile.org.in/img/backs/yellowback.jpg');}
+#h1{ color: black;
+    text-decoration: underline;
+    text-align: center;}
+#title{
+color:black; font-size:17px;
+font-family:"sans-seriff";
+text-align:left;
+padding-left: 20px;
+padding-right:25px;}
+#container{display:flex;
+margin: 70px 70px 70px 70px;
+justify-content: center;
+background-color: white;
+padding: 20px 10px 20px 10px;}
+#Entries{
+      font-family:"sans-seriff";
+color:black;
+    }
+    
+    #caform
+    {
+      text-align:justify;
+    }
+    [type="text"]{;
+    border-color: black;
+border-width:1px;
+padding:5px;
+width: 200px;
+height:25px;}
+    [type="email"]{
+    border-color: black;
+border-width:1px;
+padding:5px;
+width: 200px;
+height:25px;}
+    [type="number"]{
+    border-color: black;
+border-width:1px;
+padding:5px;
+width: 200px;
+height:25px;}
+[type="date"]{;
+    border-color: black;
+border-width:1px;
+padding:5px;
+width: 200px;
+height:25px;}
+#address {
+border-color: black;
+border-width:1px;
+padding:5px;
+width:400px; height:100px;}
+#headings{ font-size: 25px;}
+#submit{ text-align:center;
+background-color: black;
+color:white;
+border-radius:10px;
+margin-left:150px;
+margin-right:150px;}
+</style>
+<body>
+
+<h1 id="h1"> Campus Ambassador Form </h1>
+<div id="title"> Please fill out the Campus Ambassador Application form to become the Bring Smile Organization's Campus Ambassador of your college. Please fill out the form completely & provide correct information. <br> Note: Field marked with * are mandatory.</div>
+<div id="container">
+<form id="caform">
+<p id="headings"> Personal Details </p>
+<div id="Entries">
+<div id="Personal_details">
+<label for="entries">Name* <br><input id="entries" type="text" required="" placeholder="Enter your name"> </label>
+    <br> <br>
+<label for="entries">Date of Birth* <br> <input id="entries" type="date" required="" </label>
+    <br><br>
+<label for="entries">Gender* <br><input id="entries" type="text" list="l1" required="">
+<datalist id="l1">
+<option> Male </option>
+<option>Female </option>
+<option> Transgender </option>
+</datalist> </label>
+    <br><br>
+<label for="entries">Country <br> <input id="entries" type="text" placeholder="Enter your country"> </label>
+    <br><br>
+<label for="entries">State <br> <input id="entries" type="text" placeholder="Enter your state"> </label>
+    <br><br>
+<label for="entries">City <br> <input id="entries" type="text" placeholder="Enter your city"> </label>
+    <br><br>
+</div> <hr><hr>
+<p id="headings"> Qualifications </p>
+<div id="Qualifications">
+<label for="entries">College Name* <br> <input id="entries" type="text" required="" placeholder="Enter your college name"> </label>
+    <br><br>
+<label for="entries">College Website* <br> <input id="entries" type="text" required="www." placeholder="Enter your college name"> </label>
+    <br><br>
+<label for="entries">Degree(persuing)* <br><input id="entries" type="text" list="l2" required="">
+<datalist id="l2">
+<option> Under-graduate</option>
+<option>Post-graduate </option>
+</datalist> </label> <br> <br>
+<label for="entries">Year of Passing* <br><input id="entries" type="number" list="l3" required="">
+<datalist id="l3">
+<option> 2018 </option>
+<option> 2019 </option>
+<option> 2020 </option>
+<option> 2021 </option>
+<option> 2022 </option>
+</datalist> </label>
+</div><hr><hr>
+<p id="headings"> Contact Details </p>
+<div id="Contact_details">
+<label for="entries">Email* <br> <input id="entries" type="email" required="" placeholder="Enter your email id"> </label>
+    <br><br>
+<label for="entries">Mobile Number* <br> <input id="entries" type="number" required="" placeholder="Enter your mobile number"> </label>
+    <br><br>
+<label for="entries">Correspondence Address <br> <input id="address" type="text" placeholder="Enter your address here"> </label>
+    <br><br>
+<label for="entries">Permanent Address <br> <input id="address" type="text" placeholder="Enter your address here"> </label>
+    <br><br>
+</div><hr><hr>
+<p id="headings"> Skills and Experience </p>
+<div id="Skills and Experience">
+<label for="entries">Technical Skills <br> <input id="address" type="text" placeholder="Enter your technical skills"> </label>
+    <br><br>
+<label for="entries">General Skills <br> <input id="address" type="text" placeholder="Enter your general skills"> </label>
+    <br><br>
+<label for="entries">Why do you want to become Campus Ambassador?* <br> <input id="address" type="text" required=""></label>
+    <br><br>
+<label for="entries">How would you promote Bring Smile Organization? <br> <input id="address" type="text" > </label>
+    <br><br>
+<label for="entries">Upload Resume <br> <input id="resume" type="file" placeholder="Select Files"> </label>
+    <br><br><br> <hr><hr>
+<button id="submit" type="submit"> Submit</button>
+    <br><br>
+</div>
+</div>
+</form>
+</div>
+</body>
